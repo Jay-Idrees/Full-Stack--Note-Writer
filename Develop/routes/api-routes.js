@@ -52,9 +52,6 @@ fs.writeFile(path.resolve(__dirname, "../db/db.json"), JSON.stringify(db), funct
 
 });// br close post request api/notes
 
-} // closing br for module.exports
-
-
 
 //Note that when we are trying to do something to a very specific object inside the database the route contains :id or whatever you name it
 app.delete('api/notes/:id', function(req, res){
@@ -67,7 +64,21 @@ const id_list=db.map(function(note){
 
 const id_index=id_list.indexOf(parseInt(req.params.id))
 // As db is an arry of notes, we can use splice 
-// At position id_index remove 
+// At position id_index remove.  1 refers to the number of items to remove at this position in the array
+
 db.splice(id_index, 1)
 
+fs.writeFile(path.resolve(__dirname, '../db/db.json'), JSON.stringify(db), function(err){
+    if (err) throw err
+    res.json({ok:true})
 });
+
+}); // cl br for the app.delete api route
+
+
+
+
+} // closing br for module.exports
+
+
+
