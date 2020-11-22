@@ -14,10 +14,10 @@ app.use(express.static(path.join(__dirname,'public')));
 
 //Routes
 
-// require ('./routes/api-routes')(app)
-require ('./routes/html-routes')(app)
+require ('./routes/api-routes')(app);
+require ('./routes/html-routes')(app);
 
 // Loging link to the server on logging. 
 app.listen(PORT, function(){
-    console.log('The Server is now running at http://localhost:'+PORT)
-})
+    console.log('The Server is now running at http://localhost:'+PORT);
+});
