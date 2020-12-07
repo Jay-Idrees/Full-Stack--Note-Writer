@@ -2,7 +2,8 @@
   "name": "note-taker",
   "version": "1.0.0",
   "engines":{
-    "node":"12.18.4"},
+    "node":"12.18.4"
+  },
 
   "description": "",
   "main": "server.js",
