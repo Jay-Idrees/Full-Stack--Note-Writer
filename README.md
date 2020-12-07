@@ -3,8 +3,8 @@
 ## About the Project
 This project is a full-stack application that allows a user to create a sticky note for writing notes. Each of the note has a unique id and the contents are stored in a database which is a JSON file. This application couples Front-End HTML Bootstrap webpage with a backend database called db in JSON format. I developed this application during the third week of the coding bootcamp experience at Columbia University, NY. Date of publication: 11/01/2020
 
-[Link to the Note write]() <br />
-[Watch a video demonstrating the app functionality]()<br />
+[Link to the Note Writer]() <br />
+[Watch a video demonstrating the app functionality](https://youtu.be/yJxc9noTwws)<br />
 
 ## Contact Programmer for questions
 
@@ -87,7 +87,7 @@ By completing this project I was able to master application of the following pro
 
 - Using bootstrap for HTML styling
 
-- Deploymen on Heroku
+- Successful Deployment on Heroku
 
 - Using Node.JS to generate a high quality readme file
 
