@@ -1,80 +1,135 @@
-# Unit 11 Express Homework: Note Taker
+# Full-Stack Note Writer
 
-## Description
+## About the Project
+This project is a full-stack application that allows a user to create a sticky note for writing notes. Each of the note has a unique id and the contents are stored in a database which is a JSON file. This application couples Front-End HTML Bootstrap webpage with a backend database called db in JSON format. I developed this application during the third week of the coding bootcamp experience at Columbia University, NY. Date of publication: 11/01/2020
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+[Link to the Weather Dashboard]() <br />
+[Watch a video demonstrating the app functionality]()<br />
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+## Contact Programmer for questions
 
-* The following HTML routes should be created:
+Jay J. Idrees, MD, MPH<br />
+Full-Stack Software Engineer<br />
+[JAY-IDREES](https://github.com/Jay-Idrees) ![Github](http://img.shields.io/badge/github-black?style=flat&logo=github)<br />
+jidrees@live.com
 
-  * GET `/notes` - Should return the `notes.html` file.
 
-  * GET `*` - Should return the `index.html` file
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+## Contents
 
-* The following API routes should be created:
+- [User Story](#user-story)
+- [Technologies used](#technologies-used)
+- [Key files in the repository](#key-files-in-the-repository)
+- [Packages used](#packages-used)
+- [Applied Programming Skills](#applied-programming-skills)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [License](#license)
+- [Credits and Copyright](#credits-and-copyright)
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
-
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
-
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
 ## User Story
 
-AS A user, I want to be able to write and save notes
+As a user I want to be able to write and save notes. The app should have the ability to delete notes I have written before so that I can organize my thoughts and keep track of tasks I need to complete and can save pertinent information. 
 
-I WANT to be able to delete notes I've written before
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## Technologies used
 
-## Business Context
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+![Bootstrap](https://img.shields.io/badge/Bootstrap-blueviolet?style=for-the-badge&logo=bootstrap)
 
-## Acceptance Criteria
+![CSS](https://img.shields.io/badge/css-darkgreen?style=for-the-badge&logo=css3)
 
-Application should allow users to create and save notes.
+![Javascript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=JavaScript)
 
-Application should allow users to view previously saved notes.
+![HTML](https://img.shields.io/badge/HTML-informational?style=for-the-badge&logo=html5)
 
-Application should allow users to delete previously saved notes.
+![NPM](http://img.shields.io/badge/npm-yellow?style=for-the-badge&logo=NPM)
 
-## Deploying the App
+![Node](https://img.shields.io/badge/Node-green?style=for-the-badge&logo=Node.js)
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+![EXPRESS.js](http://img.shields.io/badge/express-JS-yellow?style=for-the-badge&logo=experts-exchange)
 
-- - -
+![Heroku](http://img.shields.io/badge/Heroku-purple?style=for-the-badge&logo=heroku)
 
-## Commit Early and Often
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+## Packages used
 
-Follow these guidelines for committing:
+Express
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## Applied Programming Skills
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+By completing this project I was able to master application of the following programming skills: 
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+- Setting up an Experess server using Node.JS
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+- Assigining API routes for the handeling of data
 
-## Submission on BCS
+- Assigining HTML routes for handeling requests to and from the Front-End/client
 
-You are required to submit the following:
+- Storing user note title and text content in JSON format into a database
 
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
+- Assigning unique Id for each note
 
-* The URL of the GitHub repository
+- Identifiyig indifidual notes in the global notees db by id
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+- Performing CRUD functions (Creat, Read, Update and Delete) on a specific note using an express server (app.delete, app.get, app.post functions)
+
+- Using req.body and req.prams for receiving data from the Front-End
+
+- Retrieving an ID of the last stored note and based on that generating a new id for the note
+
+- Using gitignore to prevent node modules from being pushed into the repository after a commit
+
+- Using bootstrap for HTML styling
+
+- Using Node.JS to generate a high quality readme file
+
+
+
+
+## Key files in the repository
+
+server.js <br />
+index.js
+
+
+## Installation
+
+For installation of the dependencies, please run the following command in the terminal
+
+```
+npm install
+```
+
+## Usage
+
+To start the application, please type the following command in the terminal
+
+```
+node index
+```
+
+
+## Testing
+
+For running the tests on application, please run the following commad
+
+```
+npm test
+```
+
+
+## License 
+
+![License badge](https://img.shields.io/badge/license-MIT-blue.svg)
+
+
+## Credits and Copyright 
+Copytight 2020- Present. Jay Idrees
+
+
