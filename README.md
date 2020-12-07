@@ -73,11 +73,11 @@ By completing this project I was able to master application of the following pro
 
 - Storing user note title and text content in JSON format into a database
 
-- Assigning unique Id for each note
+- Assigning a unique Id to each note
 
 - Identifiyig indifidual notes in the global notees db by id
 
-- Performing CRUD functions (Creat, Read, Update and Delete) on a specific note using an express server (app.delete, app.get, app.post functions)
+- Performing CRUD functions (Creat, Read, Update and Delete) on a specific note identified by id and by using Express.JS for handeling requests (app.delete, app.get, app.post functions)
 
 - Using req.body and req.prams for receiving data from the Front-End
 
